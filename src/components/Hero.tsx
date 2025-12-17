@@ -17,6 +17,17 @@ export default function Hero() {
 
   return (
     <section className="relative  min-h-screen flex items-center overflow-hidden bg-gradient-hero hero-glow">
+        {/* BACKGROUND VIDEO */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover -z-20 opacity-40"
+        >
+          <source src="/video/bgvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       {/* Background glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 w-80 h-80 bg-crypto-purple/20 rounded-full blur-3xl animate-pulse" />

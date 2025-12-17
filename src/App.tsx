@@ -8,6 +8,7 @@ import AppLayout from "./AppLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./about/Index";
+import Contact from "./contact/Index";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,6 +24,10 @@ const App = () => (
           <Route path="/CoxFuture" element={<AppLayout />}>
             <Route index element={<Index />} />
             <Route path="About" element={<About />} />
+             <Route path="ContactUs" element={<Contact />} />
+
+            <Route path="services/ui-ux-design" element={<About />} />
+
           </Route>
 
           {/* 404 */}

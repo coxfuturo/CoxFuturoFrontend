@@ -74,7 +74,12 @@ const Navbar = () => {
             Testimonials
           </li>
           <li className="text-gray-300 hover:text-white cursor-pointer">
-            Contact
+              <Link
+              to="/CoxFuture/ContactUs"
+              className="text-gray-300 hover:text-white transition-colors"
+            >
+              Contact Us
+            </Link>
           </li>
         </ul>
 

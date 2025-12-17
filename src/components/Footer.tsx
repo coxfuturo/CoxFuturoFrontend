@@ -108,8 +108,10 @@ const Footer = () => {
               <MapPin className="w-5 h-5 text-crypto-purple mt-1" />
               <span>
                 CoxFuture Technologies, <br />
-                LG-26,D-233,Triangles Business Park,Sector-63,<br />
-                Noida, Uttar Pradesh, India
+                LG-26,D-233,Triangles <br />
+                 Business Park,Sector-63,<br />
+                 Noida, Uttar Pradesh,<br />
+                India
               </span>
             </li>
             <li className="flex items-center gap-3">
