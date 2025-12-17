@@ -32,7 +32,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Features />
       <HowItWorks />
@@ -40,8 +40,8 @@ const Index = () => {
       <Pricing />
       <FAQ />
       <CTA />
-      <Footer />
-      <ScrollToTop />
+      {/* <Footer />
+      <ScrollToTop /> */}
 
       {/* Popup Modal */}
       <EnquiryModal open={modalOpen} onOpenChange={setModalOpen} />

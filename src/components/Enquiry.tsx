@@ -22,7 +22,7 @@ const AppInquiryForm = ({ isModal = false }) => {
           Transform Your Business
         </h2>
         <p className="text-gray-400 text-sm md:text-base">
-          Build a powerful mobile app with our expert development team.
+          Build a powerful Web and App with our expert development team.
         </p>
       </div>
 
