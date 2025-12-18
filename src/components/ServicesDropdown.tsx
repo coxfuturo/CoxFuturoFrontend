@@ -78,10 +78,17 @@ const ServicesDropdown = () => {
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: -15 }}
         exit={{ opacity: 0, x: -80 }}
-        className="absolute right-0 mt-6 w-[1250px]
-        bg-crypto-blue rounded-3xl shadow-2xl p-10
-        grid grid-cols-5 gap-14 z-40"
-      >
+        transition={{ duration: 0.4, ease: "easeOut" }}
+       className="
+          absolute right-0 mt-6 w-[1250px]
+          rounded-3xl p-10 z-40
+          grid grid-cols-5 gap-14
+          bg-gradient-to-br from-[#0F172A] via-[#111827] to-[#020617]
+          backdrop-blur-xl
+          shadow-[0_0_80px_rgba(56,189,248,0.15)]
+          overflow-hidden
+        "
+        >
         {/* IMAGE + CTA */}
         <div className="col-span-1 w-[220px] rounded-2xl overflow-hidden relative">
           <img

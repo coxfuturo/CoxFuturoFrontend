@@ -7,7 +7,6 @@ const ContactUs = () => {
   return (
     <section className="min-h-screen bg-[#12141C] pt-32 pb-24">
       <div className="container mx-auto px-4">
-
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
@@ -21,7 +20,7 @@ const ContactUs = () => {
 
         {/* MAIN GRID */}
         <div className="grid lg:grid-cols-2 gap-16 mb-24">
-{/* RIGHT – FORM */}
+        {/* RIGHT – FORM */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
             <h3 className="text-2xl font-semibold text-white mb-6">
               Get Free Consultation
