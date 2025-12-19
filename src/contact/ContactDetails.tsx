@@ -104,7 +104,7 @@ const ContactUs = () => {
 
               <div className="flex items-center gap-4">
                 <Phone className="text-crypto-purple" />
-                <p className="text-gray-300">+91 81277 67263</p>
+                <p className="text-gray-300">+91 921777 90770</p>
               </div>
 
               <div className="flex items-center gap-4">

@@ -63,7 +63,8 @@ const servicesData = [
     ]
   }
 ];
-const ServicesDropdown = () => {
+
+const ServicesDropdown = ({ onItemClick }) => {
   const [openEnquiry, setOpenEnquiry] = useState(false);
   const [selectedService, setSelectedService] = useState("");
 
@@ -79,7 +80,7 @@ const ServicesDropdown = () => {
         animate={{ opacity: 1, x: -15 }}
         exit={{ opacity: 0, x: -80 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-       className="
+        className="
           absolute right-0 mt-6 w-[1250px]
           rounded-3xl p-10 z-40
           grid grid-cols-5 gap-14
@@ -88,7 +89,7 @@ const ServicesDropdown = () => {
           shadow-[0_0_80px_rgba(56,189,248,0.15)]
           overflow-hidden
         "
-        >
+      >
         {/* IMAGE + CTA */}
         <div className="col-span-1 w-[220px] rounded-2xl overflow-hidden relative">
           <img
@@ -104,7 +105,6 @@ const ServicesDropdown = () => {
               Let’s discuss your idea
             </p>
 
-            {/* ONLY THIS OPENS MODAL */}
             <button
               onClick={() => openModal("General Enquiry")}
               className="mt-2 px-6 py-2 rounded-lg text-sm
@@ -128,11 +128,14 @@ const ServicesDropdown = () => {
                   <li key={idx}>
                     <Link
                       to={item.path}
+                      onClick={onItemClick}  
                       className="flex items-center gap-3 text-sm
                       text-gray-300 hover:text-white transition"
                     >
-                      <div className="w-9 h-9 rounded-lg bg-white/5
-                      flex items-center justify-center">
+                      <div
+                        className="w-9 h-9 rounded-lg bg-white/5
+                        flex items-center justify-center"
+                      >
                         <item.icon size={18} className="text-crypto-purple" />
                       </div>
                       {item.name}

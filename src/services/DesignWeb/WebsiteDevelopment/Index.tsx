@@ -68,14 +68,14 @@ const WebsiteDevelopment = () => {
                   <ArrowRight className="ml-2 h-5 w-5 transition group-hover:translate-x-1" />
                 </Button>
 
-                <Button
+                {/* <Button
                   size="lg"
                   variant="outline"
                   className="border-gray-700 text-white py-6 group"
                 >
                   View Our Websites
                   <ArrowUpRight className="ml-2 h-5 w-5 transition group-hover:translate-x-1 group-hover:-translate-y-1" />
-                </Button>
+                </Button> */}
               </div>
             </div>
 
@@ -88,7 +88,7 @@ const WebsiteDevelopment = () => {
                   className="rounded-xl"
                 />
 
-                <div className="absolute -top-6 -left-6 bg-black/60 rounded-xl p-4">
+                {/* <div className="absolute -top-6 -left-6 bg-black/60 rounded-xl p-4">
                   <p className="text-xs text-gray-400">Web Projects</p>
                   <p className="text-2xl font-bold text-white">150+</p>
                 </div>
@@ -96,7 +96,7 @@ const WebsiteDevelopment = () => {
                 <div className="absolute -bottom-6 -right-6 bg-black/60 rounded-xl p-4">
                   <p className="text-xs text-gray-400">Client Retention</p>
                   <p className="text-2xl font-bold text-green-500">97%</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

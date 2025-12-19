@@ -20,7 +20,7 @@ const Index = () => {
 
   // Set page title
   useEffect(() => {
-    document.title = "CoxFuture";
+    document.title = "CoxFuture Technologies";
 
     // Open modal automatically after page loads
     const timer = setTimeout(() => {

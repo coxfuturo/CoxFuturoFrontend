@@ -2,82 +2,70 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import EnquiryModal from "./EnquiryModal";
+
 import {
-  Tv,
   Bike,
-  CalendarDays,
-  Radio,
-  Gamepad2,
-  HeartPulse,
-  Utensils,
-  IndianRupee,
-  Landmark,
+  Zap,
+  Truck,
   Plane,
+  IndianRupee,
   Building2,
   ShieldCheck,
+  Landmark,
+  HeartPulse,
+  Utensils,
   GraduationCap,
-  Zap,
-  ShoppingBag,
-  Newspaper,
-  Truck,
-  Wheat,
-  Users,
   Home,
-  Map
+  Gamepad2,
+  ShoppingBag,
+  Wheat,
+  Map,
+  Users
 } from "lucide-react";
 
 const industriesData = [
-  //   {
-  //     title: "On Demand & Media",
-  //     items: [
-  //       { name: "On Demand", icon: Zap },
-  //       { name: "Entertainment", icon: Tv },
-  //       { name: "News", icon: Newspaper },
-  //       { name: "Social Networking", icon: Users }
-  //     ]
-  //   },
   {
     title: "Mobility & Transport",
     items: [
-      { name: "E-Scooter", icon: Bike },
-      { name: "EV", icon: Zap },
-      { name: "Logistics", icon: Truck },
-      { name: "Aviation", icon: Plane }
+      { name: "E-Scooter", icon: Bike, path: "/CoxFuture/industries/e-scooter" },
+      { name: "EV", icon: Zap, path: "/CoxFuture/industries/ev" },
+      { name: "Logistics", icon: Truck, path: "/CoxFuture/industries/logistics" },
+      { name: "Aviation", icon: Plane, path: "/CoxFuture/industries/aviation" }
     ]
   },
   {
     title: "Business & Finance",
     items: [
-      { name: "Finance", icon: IndianRupee },
-      { name: "Banking", icon: Building2 },
-      { name: "Insurance", icon: ShieldCheck },
-      { name: "Politics", icon: Landmark }
+      { name: "Finance", icon: IndianRupee, path: "/CoxFuture/industries/finance" },
+      { name: "Banking", icon: Building2, path: "/CoxFuture/industries/banking" },
+      { name: "Insurance", icon: ShieldCheck, path: "/CoxFuture/industries/insurance" },
+      { name: "Politics", icon: Landmark, path: "/CoxFuture/industries/politics" }
     ]
   },
   {
     title: "Lifestyle & Others",
     items: [
-      { name: "Healthcare", icon: HeartPulse },
-      { name: "Food Delivery", icon: Utensils },
-      { name: "Education", icon: GraduationCap },
-      { name: "Real Estate", icon: Home }
+      { name: "Healthcare", icon: HeartPulse, path: "/CoxFuture/industries/healthcare" },
+      { name: "Food Delivery", icon: Utensils, path: "/CoxFuture/industries/food-delivery" },
+      { name: "Education", icon: GraduationCap, path: "/CoxFuture/industries/education" },
+      { name: "Real Estate", icon: Home, path: "/CoxFuture/industries/real-estate" }
     ]
   },
   {
     title: "More Industries",
     items: [
-      { name: "Games", icon: Gamepad2 },
-      { name: "E-Commerce", icon: ShoppingBag },
-      { name: "Agriculture", icon: Wheat },
-      { name: "Tour & Travels", icon: Map },
-      { name: "Social Networking", icon: Users }
-
+      { name: "Games", icon: Gamepad2, path: "/CoxFuture/industries/games" },
+      { name: "E-Commerce", icon: ShoppingBag, path: "/CoxFuture/industries/ecommerce" },
+      { name: "Agriculture", icon: Wheat, path: "/CoxFuture/industries/agriculture" },
+      { name: "Tour & Travels", icon: Map, path: "/CoxFuture/industries/travel" },
+      { name: "Social Networking", icon: Users, path: "/CoxFuture/industries/social-networking" }
     ]
   }
 ];
 
-const IndustriesDropdown = () => {
+const IndustriesDropdown = ({ onItemClick }) => {
   const [openEnquiry, setOpenEnquiry] = useState(false);
   const [selectedIndustry, setSelectedIndustry] = useState("");
 
@@ -104,7 +92,6 @@ const IndustriesDropdown = () => {
             alt="Industries"
             className="w-full h-full object-cover"
           />
-
           <div className="absolute inset-0 bg-black/40" />
 
           <div className="absolute bottom-6 left-0 right-0 px-4 text-center space-y-2">
@@ -115,12 +102,12 @@ const IndustriesDropdown = () => {
               Built for your business
             </p>
 
+            {/* ONLY THIS OPENS MODAL */}
             <button
               onClick={() => openModal("Industry Enquiry")}
-              className="mt-2 px-6 py-2
-                         rounded-lg text-sm font-medium
+              className="mt-2 px-6 py-2 rounded-lg
+                         text-sm font-medium
                          text-white bg-crypto-purple
-                         shadow-md transition
                          hover:bg-crypto-purple/90"
             >
               Get Enquiry
@@ -138,18 +125,20 @@ const IndustriesDropdown = () => {
 
               <ul className="space-y-4">
                 {industry.items.map((item, idx) => (
-                  <li
-                    key={idx}
-                    onClick={() => openModal(item.name)}
-                    className="flex items-center gap-3
-                               text-sm text-gray-300
-                               hover:text-white cursor-pointer transition"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-white/5
-                                    flex items-center justify-center">
-                      <item.icon size={18} className="text-crypto-purple" />
-                    </div>
-                    {item.name}
+                  <li key={idx}>
+                    <Link
+                      onClick={onItemClick}
+                      to={item.path}
+                      className="flex items-center gap-3
+                                 text-sm text-gray-300
+                                 hover:text-white transition"
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-white/5
+                                      flex items-center justify-center">
+                        <item.icon size={18} className="text-crypto-purple" />
+                      </div>
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>

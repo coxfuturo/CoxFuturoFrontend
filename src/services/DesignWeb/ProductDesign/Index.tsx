@@ -88,7 +88,7 @@ const ProductDesign = () => {
                   className="rounded-xl"
                 />
 
-                <div className="absolute -top-6 -left-6 bg-black/60 rounded-xl p-4">
+                {/* <div className="absolute -top-6 -left-6 bg-black/60 rounded-xl p-4">
                   <p className="text-xs text-gray-400">Products Designed</p>
                   <p className="text-2xl font-bold text-white">80+</p>
                 </div>
@@ -96,7 +96,7 @@ const ProductDesign = () => {
                 <div className="absolute -bottom-6 -right-6 bg-black/60 rounded-xl p-4">
                   <p className="text-xs text-gray-400">Market Success Rate</p>
                   <p className="text-2xl font-bold text-green-500">95%</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
