@@ -1,7 +1,17 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import EnquiryModal from "./EnquiryModal";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const CTA = () => {
+    const [openEnquiry, setOpenEnquiry] = useState(false);
+    const [selectedIndustry, setSelectedIndustry] = useState("");
+  
+    const openModal = (industry = "") => {
+      setSelectedIndustry(industry);
+      setOpenEnquiry(true);
+    };
   return (
     <section className="py-24 bg-gradient-to-b from-crypto-blue to-[#12141C] relative overflow-hidden">
       {/* Background Elements */}
@@ -42,6 +52,7 @@ const CTA = () => {
             <Button
               variant="outline"
               size="lg"
+              onClick={() => openModal("General Enquiry")}
               className="border-white/20 text-white hover:bg-white/5 py-6"
             >
               Get Free Consultation
@@ -56,6 +67,15 @@ const CTA = () => {
           </p>
         </div>
       </div>
+       {/* MODAL */}
+            <AnimatePresence>
+              {openEnquiry && (
+                <EnquiryModal
+                  open={selectedIndustry}
+                  onOpenChange={() => setOpenEnquiry(false)}
+                />
+              )}
+            </AnimatePresence>
     </section>
   );
 };

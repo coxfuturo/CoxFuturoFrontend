@@ -188,7 +188,7 @@ const AnimatedHeading = ({ text }) => (
             transition: { duration: 0.5 }
           }
         }}
-        className={word === "Digital" ? "text-gradient" : ""}
+        className={`${word === "Digital" || word === "Business" ? "text-gradient" : ""}`}
       >
         {word}
       </motion.span>

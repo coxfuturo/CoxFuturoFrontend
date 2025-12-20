@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
     base: "/CoxFuture/",
+    BASE_URL:"asasa",
   server: {
     host: "::",
     port: 3000,
