@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* LOGO */}
         <Link to="/CoxFuture/" className="flex items-center gap-2">
           {/* <img
-            src="/CoxFuture/coxfuture.jpeg"
+            src="/coxfuture.jpeg"
             alt="CoxFuture Logo"
             className="w-10 h-10"
           /> */}
@@ -51,7 +51,7 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center space-x-8">
           <li>
             <Link
-              to="/CoxFuture/About"
+              to="/About"
               className="text-gray-300 hover:text-white"
               onClick={closeDropdown}
             >
@@ -93,7 +93,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              to="/CoxFuture/ContactUs"
+              to="/ContactUs"
               className="text-gray-300 hover:text-white"
               onClick={closeDropdown}
             >
@@ -128,16 +128,16 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-crypto-blue/95 backdrop-blur-lg py-4">
           <ul className="flex flex-col space-y-4 px-4">
-            <Link to="/CoxFuture/About" onClick={closeDropdown}>
+            <Link to="/About" onClick={closeDropdown}>
               About Us
             </Link>
-            <Link to="/CoxFuture/Services" onClick={closeDropdown}>
+            <Link to="/Services" onClick={closeDropdown}>
               Services
             </Link>
-            <Link to="/CoxFuture/Industries" onClick={closeDropdown}>
+            <Link to="/Industries" onClick={closeDropdown}>
               Industries
             </Link>
-            <Link to="/CoxFuture/ContactUs" onClick={closeDropdown}>
+            <Link to="/ContactUs" onClick={closeDropdown}>
               Contact Us
             </Link>
           </ul>

@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="container mx-auto px-4 flex items-center relative">
               {/* <img
-                src="/CoxFuture/coxfuture.jpeg"
+                src="/coxfuture.jpeg"
                 alt="CoxFuture Logo"
                 className="w-10 h-10 mb-4"
               /> */}
