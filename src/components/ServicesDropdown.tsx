@@ -26,40 +26,40 @@ const servicesData = [
   {
     title: "Design & Web",
     items: [
-      { name: "UI & UX Design Service", icon: Palette, path: "/CoxFuture/services/ui-ux-design" },
-      { name: "Product Design Services", icon: PenTool, path: "/CoxFuture/services/product-design" },
-      { name: "Website Development", icon: Layout, path: "/CoxFuture/services/website-development" },
-      { name: "E-commerce Website", icon: ShoppingCart, path: "/CoxFuture/services/ecommerce" },
-      { name: "Corporate Website", icon: Globe, path: "/CoxFuture/services/corporate-website" },
-      { name: "CMS Development", icon: Code2, path: "/CoxFuture/services/cms-development" },
-      { name: "Progressive Web App", icon: Smartphone, path: "/CoxFuture/services/pwa" }
+      { name: "UI & UX Design Service", icon: Palette, path: "/services/ui-ux-design" },
+      { name: "Product Design Services", icon: PenTool, path: "/services/product-design" },
+      { name: "Website Development", icon: Layout, path: "/services/website-development" },
+      { name: "E-commerce Website", icon: ShoppingCart, path: "/services/ecommerce" },
+      { name: "Corporate Website", icon: Globe, path: "/services/corporate-website" },
+      { name: "CMS Development", icon: Code2, path: "/services/cms-development" },
+      { name: "Progressive Web App", icon: Smartphone, path: "/services/pwa" }
     ]
   },
   {
     title: "App Development",
     items: [
-      { name: "Mobile App Development", icon: Smartphone, path: "/CoxFuture/services/mobile-app" },
-      { name: "Android App Development", icon: Smartphone, path: "/CoxFuture/services/android-app" },
-      { name: "iOS App Development", icon: Smartphone, path: "/CoxFuture/services/ios-app" },
-      { name: "React Native App", icon: Code2, path: "/CoxFuture/services/react-native" }
+      { name: "Mobile App Development", icon: Smartphone, path: "/services/mobile-app" },
+      { name: "Android App Development", icon: Smartphone, path: "/services/android-app" },
+      { name: "iOS App Development", icon: Smartphone, path: "/services/ios-app" },
+      { name: "React Native App", icon: Code2, path: "/services/react-native" }
     ]
   },
   {
     title: "Software Solutions",
     items: [
-      { name: "SaaS Development", icon: Layers, path: "/CoxFuture/services/saas" },
-      { name: "Custom CRM", icon: Database, path: "/CoxFuture/services/crm" },
-      { name: "ERP Development", icon: Box, path: "/CoxFuture/services/erp" },
-      { name: "AR / VR Solutions", icon: Code2, path: "/CoxFuture/services/ar-vr" }
+      { name: "SaaS Development", icon: Layers, path: "/services/saas" },
+      { name: "Custom CRM", icon: Database, path: "/services/crm" },
+      { name: "ERP Development", icon: Box, path: "/services/erp" },
+      { name: "AR / VR Solutions", icon: Code2, path: "/services/ar-vr" }
     ]
   },
   {
     title: "Marketing",
     items: [
-      { name: "Digital Marketing", icon: Megaphone, path: "/CoxFuture/services/digital-marketing" },
-      { name: "SEO Optimization", icon: Search, path: "/CoxFuture/services/seo" },
-      { name: "Content Writing", icon: FileText, path: "/CoxFuture/services/content-writing" },
-      { name: "Social Media Marketing", icon: Share2, path: "/CoxFuture/services/social-media" }
+      { name: "Digital Marketing", icon: Megaphone, path: "/services/digital-marketing" },
+      { name: "SEO Optimization", icon: Search, path: "/services/seo" },
+      { name: "Content Writing", icon: FileText, path: "/services/content-writing" },
+      { name: "Social Media Marketing", icon: Share2, path: "/services/social-media" }
     ]
   }
 ];

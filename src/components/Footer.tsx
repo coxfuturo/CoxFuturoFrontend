@@ -76,7 +76,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link onClick={scrollToTop}
-                  to="/CoxFuture/About"
+                  to="About"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   About Us
@@ -86,7 +86,7 @@ const Footer = () => {
               <li><a href="#!" className="text-gray-400 hover:text-crypto-purple transition-colors">Case Studies</a></li>
               <li>
                 <Link onClick={scrollToTop}
-                  to="/CoxFuture/ContactUs"
+                  to="/ContactUs"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   Contact Us
@@ -101,7 +101,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link onClick={scrollToTop}
-                  to="/CoxFuture/services/website-development"
+                  to="/services/website-development"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   Web Development
@@ -109,7 +109,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link onClick={scrollToTop}
-                  to="/CoxFuture/services/mobile-app"
+                  to="/services/mobile-app"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   Mobile App Development
@@ -117,7 +117,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link onClick={scrollToTop}
-                  to="/CoxFuture/services/ios-app"
+                  to="/services/ios-app"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   iOS App Development
@@ -125,7 +125,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link onClick={scrollToTop}
-                  to="/CoxFuture/services/android-app"
+                  to="/services/android-app"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   Android App Development
@@ -138,7 +138,7 @@ const Footer = () => {
             </li> */}
               <li>
                 <Link onClick={scrollToTop}
-                  to="/CoxFuture/services/seo"
+                  to="/services/seo"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   Technical SEO
@@ -148,7 +148,7 @@ const Footer = () => {
               <li>
                 <Link onClick={scrollToTop}
 
-                  to="/CoxFuture/services/digital-marketing"
+                  to="/services/digital-marketing"
                   className="text-gray-400 hover:text-crypto-purple transition-colors"
                 >
                   Digital Marketing Development

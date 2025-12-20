@@ -62,7 +62,7 @@ const App = () => (
         <Routes>
 
           {/* COMMON LAYOUT */}
-          <Route path="/CoxFuture" element={<AppLayout />}>
+          <Route path="/" element={<AppLayout />}>
             <Route index element={<Index />} />
             <Route path="About" element={<About />} />
              <Route path="ContactUs" element={<Contact />} />

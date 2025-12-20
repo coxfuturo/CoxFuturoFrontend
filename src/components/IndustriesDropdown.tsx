@@ -29,38 +29,38 @@ const industriesData = [
   {
     title: "Mobility & Transport",
     items: [
-      { name: "E-Scooter", icon: Bike, path: "/CoxFuture/industries/e-scooter" },
-      { name: "EV", icon: Zap, path: "/CoxFuture/industries/ev" },
-      { name: "Logistics", icon: Truck, path: "/CoxFuture/industries/logistics" },
-      { name: "Aviation", icon: Plane, path: "/CoxFuture/industries/aviation" }
+      { name: "E-Scooter", icon: Bike, path: "/industries/e-scooter" },
+      { name: "EV", icon: Zap, path: "/industries/ev" },
+      { name: "Logistics", icon: Truck, path: "/industries/logistics" },
+      { name: "Aviation", icon: Plane, path: "/industries/aviation" }
     ]
   },
   {
     title: "Business & Finance",
     items: [
-      { name: "Finance", icon: IndianRupee, path: "/CoxFuture/industries/finance" },
-      { name: "Banking", icon: Building2, path: "/CoxFuture/industries/banking" },
-      { name: "Insurance", icon: ShieldCheck, path: "/CoxFuture/industries/insurance" },
-      { name: "Politics", icon: Landmark, path: "/CoxFuture/industries/politics" }
+      { name: "Finance", icon: IndianRupee, path: "/industries/finance" },
+      { name: "Banking", icon: Building2, path: "/industries/banking" },
+      { name: "Insurance", icon: ShieldCheck, path: "/industries/insurance" },
+      { name: "Politics", icon: Landmark, path: "/industries/politics" }
     ]
   },
   {
     title: "Lifestyle & Others",
     items: [
-      { name: "Healthcare", icon: HeartPulse, path: "/CoxFuture/industries/healthcare" },
-      { name: "Food Delivery", icon: Utensils, path: "/CoxFuture/industries/food-delivery" },
-      { name: "Education", icon: GraduationCap, path: "/CoxFuture/industries/education" },
-      { name: "Real Estate", icon: Home, path: "/CoxFuture/industries/real-estate" }
+      { name: "Healthcare", icon: HeartPulse, path: "/industries/healthcare" },
+      { name: "Food Delivery", icon: Utensils, path: "/industries/food-delivery" },
+      { name: "Education", icon: GraduationCap, path: "/industries/education" },
+      { name: "Real Estate", icon: Home, path: "/industries/real-estate" }
     ]
   },
   {
     title: "More Industries",
     items: [
-      { name: "Games", icon: Gamepad2, path: "/CoxFuture/industries/games" },
-      { name: "E-Commerce", icon: ShoppingBag, path: "/CoxFuture/industries/ecommerce" },
-      { name: "Agriculture", icon: Wheat, path: "/CoxFuture/industries/agriculture" },
-      { name: "Tour & Travels", icon: Map, path: "/CoxFuture/industries/travel" },
-      { name: "Social Networking", icon: Users, path: "/CoxFuture/industries/social-networking" }
+      { name: "Games", icon: Gamepad2, path: "/industries/games" },
+      { name: "E-Commerce", icon: ShoppingBag, path: "/industries/ecommerce" },
+      { name: "Agriculture", icon: Wheat, path: "/industries/agriculture" },
+      { name: "Tour & Travels", icon: Map, path: "/industries/travel" },
+      { name: "Social Networking", icon: Users, path: "/industries/social-networking" }
     ]
   }
 ];
