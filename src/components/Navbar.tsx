@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center relative">
         
         {/* LOGO */}
-        <Link to="/CoxFuture/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           {/* <img
             src="/coxfuture.jpeg"
             alt="CoxFuture Logo"
