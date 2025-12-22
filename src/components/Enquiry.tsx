@@ -77,7 +77,7 @@ const AppInquiryForm = ({ isModal = false, onSuccess }) => {
     try {
       setLoading(true);
 
-      const res = await fetch(`http://localhost:4000/api/enquiry`, {
+      const res = await fetch(`https://coxfuture.com//api/enquiry`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
