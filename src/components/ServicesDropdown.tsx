@@ -75,21 +75,23 @@ const ServicesDropdown = ({ onItemClick }) => {
 
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, x: -40 }}
-        animate={{ opacity: 1, x: -15 }}
-        exit={{ opacity: 0, x: -80 }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="
-          absolute right-0 mt-6 w-[1250px]
-          rounded-3xl p-10 z-40
-          grid grid-cols-5 gap-14
-          bg-gradient-to-br from-[#0F172A] via-[#111827] to-[#020617]
-          backdrop-blur-xl
-          shadow-[0_0_80px_rgba(56,189,248,0.15)]
-          overflow-hidden
-        "
-      >
+        <motion.div
+      initial={{ opacity: 0, x: -40 }}
+      animate={{ opacity: 1, x: -15 }}
+      exit={{ opacity: 0, x: -80 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="
+        hidden lg:grid
+        absolute right-0 mt-6 w-[1250px]
+        rounded-3xl p-10 z-40
+        grid-cols-5 gap-14
+        bg-gradient-to-br from-[#0F172A] via-[#111827] to-[#020617]
+        backdrop-blur-xl
+        shadow-[0_0_80px_rgba(56,189,248,0.15)]
+        overflow-hidden
+      "
+    >
+
         {/* IMAGE + CTA */}
         <div className="col-span-1 w-[220px] rounded-2xl overflow-hidden relative">
           <img
@@ -147,6 +149,41 @@ const ServicesDropdown = ({ onItemClick }) => {
           ))}
         </div>
       </motion.div>
+{/* ================= MOBILE SERVICES DROPDOWN ================= */}
+<div className="
+  lg:hidden
+  bg-[#020617]
+  rounded-xl
+  p-4
+  max-h-[70vh]
+  overflow-y-auto
+  custom-scrollbar
+">
+  {servicesData.map((service, index) => (
+    <div key={index} className="mb-6">
+      <h4 className="text-white font-semibold text-base mb-3">
+        {service.title}
+      </h4>
+
+      <ul className="space-y-3">
+        {service.items.map((item, idx) => (
+          <li key={idx}>
+            <Link
+              to={item.path}
+              onClick={onItemClick}
+              className="flex items-center gap-3 text-sm text-gray-300"
+            >
+              <div className="w-8 h-8 rounded-md bg-white/5 flex items-center justify-center">
+                <item.icon size={16} className="text-crypto-purple" />
+              </div>
+              {item.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>
 
       {/* ENQUIRY MODAL */}
       <AnimatePresence>
