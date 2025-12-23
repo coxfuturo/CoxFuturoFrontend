@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* LOGO */}
         <Link to="/CoxFuture/" className="flex items-center gap-2">
           {/* <img
-            src="/coxfuture.jpeg"
+            src="/CoxFuture/coxfuture.jpeg"
             alt="CoxFuture Logo"
             className="w-10 h-10"
           /> */}
