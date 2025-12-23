@@ -11,6 +11,9 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileDropdown, setMobileDropdown] = useState(null);
+    const OFFER_END_TIME = new Date("2026-01-05T00:00:00"); // 🎯 change date here
+
+    const [timeLeft, setTimeLeft] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +22,30 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+useEffect(() => {
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = OFFER_END_TIME.getTime() - now;
+
+    if (distance <= 0) {
+      setTimeLeft("Offer Ended");
+      clearInterval(timer);
+      return;
+    }
+
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    setTimeLeft(
+      `${hours.toString().padStart(2, "0")}:${minutes
+        .toString()
+        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`
+    );
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, []);
 
   const closeDropdown = () => {
     setOpenDropdown(null);
@@ -46,10 +73,14 @@ const Navbar = () => {
           <h1 className="text-2xl font-bold text-white">
             Cox<span className="text-crypto-purple">Future</span>
           </h1>
+
+
         </Link>
+        
 
         {/* DESKTOP MENU */}
         <ul className="hidden lg:flex items-center space-x-8">
+          
           <li>
             <Link
               to="/About"
