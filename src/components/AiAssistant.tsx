@@ -250,8 +250,8 @@ const [messages, setMessages] = useState([
   ];
 
   const contactOptions = [
-    { icon: <Phone size={isMobile ? 16 : 18} />, label: " Call Support", subtitle: "+91 92177 09770", action: () => window.open("tel:+919217709770") },
-    { icon: <MessageSquare size={isMobile ? 16 : 18} />, label: " WhatsApp Chat", subtitle: "Instant response", action: () => window.open("https://wa.me/919217709770") },
+    { icon: <Phone size={isMobile ? 16 : 18} />, label: " Call Support", subtitle: "+91 92177 90770", action: () => window.open("tel:+919217790770") },
+    { icon: <MessageSquare size={isMobile ? 16 : 18} />, label: " WhatsApp Chat", subtitle: "Instant response", action: () => window.open("https://wa.me/919217790770") },
     { icon: <Mail size={isMobile ? 16 : 18} />, label: " Send Email", subtitle: "info@CoxFuture.com", action: () => window.open("mailto:info@CoxFuture.com") },
     // { icon: <FileText size={isMobile ? 16 : 18} />, label: " Get Quote", subtitle: "Custom pricing", action: () => safeNavigate("/contact") }
   ];
