@@ -32,7 +32,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover -z-20 opacity-35"
       >
-        <source src="/video/bgvideo.mp4" type="video/mp4" />
+        <source src="/bgvideo.mp4" type="video/mp4" />
       </video>
 
       <div className="container mx-auto px-4 py-28">
@@ -65,11 +65,11 @@ export default function Hero() {
             {/* HEADING */}
             <AnimatedHeading text="We Build Digital Products That Scale Your Business" />
 
-          <p className="text-lg text-gray-300 max-w-xl mb-8">
-            We help startups, SMEs and enterprises design, develop and scale
-            secure web apps, mobile apps and SaaS platforms using modern
-            technologies.
-          </p>
+            <p className="text-lg text-gray-300 max-w-xl mb-8">
+              We help startups, SMEs and enterprises design, develop and scale
+              secure web apps, mobile apps and SaaS platforms using modern
+              technologies.
+            </p>
 
             {/* SERVICES */}
             <motion.div
@@ -83,20 +83,20 @@ export default function Hero() {
 
             {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4">
-  <Button
-    size="lg"
-    onClick={() => openModal("General Enquiry")}
-    className="group bg-crypto-purple px-8 py-6"
-  >
-    Get Free Consultation
-    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition" />
-  </Button>
-{/* 
+              <Button
+                size="lg"
+                onClick={() => openModal("General Enquiry")}
+                className="group bg-crypto-purple px-8 py-6"
+              >
+                Get Free Consultation
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition" />
+              </Button>
+              {/* 
   <Button size="lg" variant="outline">
     View Portfolio
     <ArrowUpRight className="ml-2 h-5 w-5" />
   </Button> */}
-</div>
+            </div>
 
           </motion.div>
 

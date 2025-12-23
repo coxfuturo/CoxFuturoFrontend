@@ -50,6 +50,7 @@ import ECommerceIndustry from "./Industries/More-Industries/E-commerce/Index";
 import AgricultureIndustry from "./Industries/More-Industries/Agriculture/Index";
 import TourTravelIndustry from "./Industries/More-Industries/Tour-Travels/Index";
 import SocialNetworkingIndustry from "./Industries/More-Industries/SocialNetworking/Index";
+
 const queryClient = new QueryClient();
 
 const App = () => (

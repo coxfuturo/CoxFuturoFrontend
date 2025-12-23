@@ -10,6 +10,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [mobileDropdown, setMobileDropdown] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center relative">
         
         {/* LOGO */}
-        <Link to="/CoxFuture/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           {/* <img
             src="/CoxFuture/coxfuture.jpeg"
             alt="CoxFuture Logo"
@@ -126,23 +127,70 @@ const Navbar = () => {
 
       {/* MOBILE MENU */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-crypto-blue/95 backdrop-blur-lg py-4">
-          <ul className="flex flex-col space-y-4 px-4">
-            <Link to="/About" onClick={closeDropdown}>
-              About Us
-            </Link>
-            <Link to="/Services" onClick={closeDropdown}>
-              Services
-            </Link>
-            <Link to="/Industries" onClick={closeDropdown}>
-              Industries
-            </Link>
-            <Link to="/ContactUs" onClick={closeDropdown}>
-              Contact Us
-            </Link>
-          </ul>
-        </div>
-      )}
+  <div className="lg:hidden bg-crypto-blue/95 backdrop-blur-lg py-4">
+    <ul className="flex flex-col space-y-4 px-4 text-gray-300">
+
+      <Link to="/About" onClick={closeDropdown}>
+        About Us
+      </Link>
+
+      {/* MOBILE SERVICES */}
+      <li>
+        <button
+          className="flex items-center justify-between w-full"
+          onClick={() =>
+            setMobileDropdown(
+              mobileDropdown === "services" ? null : "services"
+            )
+          }
+        >
+          Services
+          <ChevronDown
+            className={`transition-transform ${
+              mobileDropdown === "services" ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+
+        {mobileDropdown === "services" && (
+          <div className="mt-3 pl-4">
+            <ServicesDropdown onItemClick={closeDropdown} />
+          </div>
+        )}
+      </li>
+
+      {/* MOBILE INDUSTRIES */}
+      <li>
+        <button
+          className="flex items-center justify-between w-full"
+          onClick={() =>
+            setMobileDropdown(
+              mobileDropdown === "industries" ? null : "industries"
+            )
+          }
+        >
+          Industries
+          <ChevronDown
+            className={`transition-transform ${
+              mobileDropdown === "industries" ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+
+        {mobileDropdown === "industries" && (
+          <div className="mt-3 pl-4">
+            <IndustriesDropdown onItemClick={closeDropdown} />
+          </div>
+        )}
+      </li>
+
+      <Link to="/ContactUs" onClick={closeDropdown}>
+        Contact Us
+      </Link>
+    </ul>
+  </div>
+)}
+
     </nav>
   );
 };

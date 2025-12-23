@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import useScrollAnimation from "@/utils/useScrollAnimation";
 import EnquiryModal from "@/components/EnquiryModal";
-
+import AiAssistant from "@/components/AiAssistant";
 const Index = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -40,6 +40,7 @@ const Index = () => {
       {/* <Pricing /> */}
       <FAQ />
       <CTA />
+      {/* <AiAssistant/> */}
       {/* <Footer />
       <ScrollToTop /> */}
 
