@@ -11,6 +11,8 @@ import {
 import { Button } from "@/components/ui/button";
 import EnquiryModal from "./EnquiryModal";
 import { AnimatePresence, motion } from "framer-motion";
+import FestiveSnow from "@/components/FestiveSnow";
+import FestiveOffer from "@/components/FestiveOffer";
 
 export default function Hero() {
   const [openEnquiry, setOpenEnquiry] = useState(false);
@@ -23,7 +25,9 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero hero-glow">
-
+    <FestiveSnow />
+  {/* 🎄 FESTIVE OFFER – TOP CENTER LINE */}
+ 
       {/* BACKGROUND VIDEO */}
       <video
         autoPlay
@@ -36,6 +40,7 @@ export default function Hero() {
       </video>
 
       <div className="container mx-auto px-4 py-28">
+
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT CONTENT */}
@@ -63,8 +68,11 @@ export default function Hero() {
             </motion.div>
 
             {/* HEADING */}
-            <AnimatedHeading text="We Build Digital Products That Scale Your Business" />
 
+<AnimatedHeading text="We Build Digital Products That Scale Your Business" />
+         <div className="absolute top-8 left-1/3 -translate-x-1/4 z-50">
+    <FestiveOffer />
+  </div>
             <p className="text-lg text-gray-300 max-w-xl mb-8">
               We help startups, SMEs and enterprises design, develop and scale
               secure web apps, mobile apps and SaaS platforms using modern
@@ -102,15 +110,17 @@ export default function Hero() {
 
           {/* RIGHT CONTENT */}
           <motion.div
-            animate={{ scale: [0.95, 1, 0.95], opacity: [0.85, 1, 0.85] }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              // ease: "easeInOut"
-            }}
+            // animate={{ scale: [0.95, 1, 0.95], opacity: [0.85, 1, 0.85] }}
+            // transition={{
+            //   duration: 6,
+            //   repeat: Infinity,
+            //   // ease: "easeInOut"
+            // }}
             className="relative"
           >
+    
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 shadow-2xl">
+              
               <img
                 src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=700"
                 alt="Dashboard"
