@@ -25,9 +25,9 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero hero-glow">
-    <FestiveSnow />
-  {/* 🎄 FESTIVE OFFER – TOP CENTER LINE */}
- 
+      <FestiveSnow />
+      {/* 🎄 FESTIVE OFFER – TOP CENTER LINE */}
+
       {/* BACKGROUND VIDEO */}
       <video
         autoPlay
@@ -69,10 +69,10 @@ export default function Hero() {
 
             {/* HEADING */}
 
-<AnimatedHeading text="We Build Digital Products That Scale Your Business" />
-         <div className="absolute top-8 left-1/3 -translate-x-1/4 z-50">
-    <FestiveOffer />
-  </div>
+            <AnimatedHeading text="We Build Digital Products That Scale Your Business" />
+            <div className="absolute top-8 left-1/3 -translate-x-1/4 z-50">
+              <FestiveOffer />
+            </div>
             <p className="text-lg text-gray-300 max-w-xl mb-8">
               We help startups, SMEs and enterprises design, develop and scale
               secure web apps, mobile apps and SaaS platforms using modern
@@ -118,9 +118,9 @@ export default function Hero() {
             // }}
             className="relative"
           >
-    
+
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 shadow-2xl">
-              
+
               <img
                 src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=700"
                 alt="Dashboard"

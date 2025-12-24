@@ -50,6 +50,8 @@ import ECommerceIndustry from "./Industries/More-Industries/E-commerce/Index";
 import AgricultureIndustry from "./Industries/More-Industries/Agriculture/Index";
 import TourTravelIndustry from "./Industries/More-Industries/Tour-Travels/Index";
 import SocialNetworkingIndustry from "./Industries/More-Industries/SocialNetworking/Index";
+import QuotationCalculator from "./calculator";
+import { RowsIcon } from "lucide-react";
 
 const queryClient = new QueryClient();
 
@@ -106,8 +108,11 @@ const App = () => (
             <Route path="industries/agriculture" element={<AgricultureIndustry />} />
             <Route path="industries/travel" element={<TourTravelIndustry />} />
             <Route path="industries/social-networking" element={<  SocialNetworkingIndustry />} />
+           {/* calculator */}
+            <Route path="quotation/calculator" element={<  QuotationCalculator />} />
 
           </Route>
+
 
           {/* 404 */}
           <Route path="*" element={<NotFound />} />
