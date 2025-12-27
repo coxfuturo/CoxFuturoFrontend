@@ -64,7 +64,6 @@ interface CareerFormData {
 const API_URL = "https://coxfuture.com/api/uploads";
 
 
-
 export default function CareerPage() {
   const [formData, setFormData] = useState<CareerFormData>({
     fullName: "",
