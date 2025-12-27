@@ -61,7 +61,7 @@ interface CareerFormData {
   portfolio?: string;
 }
 
-const API_URL = "http://localhost:4000/api/uploads";
+const API_URL = "https://coxfuture.com/api/uploads";
 
 export default function CareerPage() {
   const [formData, setFormData] = useState<CareerFormData>({
@@ -79,7 +79,7 @@ export default function CareerPage() {
 
   /* ===== GET COUNT ===== */
   const fetchApplications = async () => {
-    const res = await fetch(`http://localhost:4000/api/career`);
+    const res = await fetch(`https://coxfuture.com/api/career`);
     const data = await res.json();
     setApplicationsCount(data?.data?.length || 0);
   };
