@@ -201,7 +201,7 @@ const NewYearOffer = () => {
                 <div className="flex flex-col items-center lg:items-start gap-3 mb-4">
                   {/* Emoji & Text Row */}
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <motion.div
+                    {/* <motion.div
                       animate={{ 
                         rotate: [0, 10, 0, -10, 0],
                         scale: [1, 1.1, 1]
@@ -210,7 +210,7 @@ const NewYearOffer = () => {
                       className="text-3xl sm:text-4xl"
                     >
                       🎆
-                    </motion.div>
+                    </motion.div> */}
                     
                     <div className="relative">
                       <h2 className="text-base sm:text-lg md:text-xl font-bold text-white mb-1 leading-tight">
@@ -225,7 +225,7 @@ const NewYearOffer = () => {
                       </div>
                     </div>
                     
-                    <motion.div
+                    {/* <motion.div
                       animate={{ 
                         y: [0, -5, 0],
                         scale: [1, 1.05, 1]
@@ -234,7 +234,7 @@ const NewYearOffer = () => {
                       className="text-3xl sm:text-4xl"
                     >
                       🎇
-                    </motion.div>
+                    </motion.div> */}
                   </div>
 
                   {/* Offer Details */}

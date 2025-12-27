@@ -122,7 +122,7 @@ export default function Hero() {
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 shadow-2xl">
 
               <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=700"
+                src="https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Dashboard"
                 className="rounded-2xl"
               />

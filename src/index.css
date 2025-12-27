@@ -53,7 +53,7 @@
   }
 
   .bg-gradient-hero {
-    @apply bg-gradient-to-br from-crypto-blue via-[#252A3C] to-[#1E2233];
+    @apply bg-gradient-to-br  via-[#252A3C] to-[#1E2233];
   }
 
     .hero-glow:after {
