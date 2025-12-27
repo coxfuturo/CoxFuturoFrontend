@@ -91,6 +91,13 @@ const Footer = () => {
                 >
                   Contact Us
                 </Link>
+              </li> <li>
+                <Link onClick={scrollToTop}
+                  to="/career"
+                  className="text-gray-400 hover:text-crypto-purple transition-colors"
+                >
+                  Career
+                </Link>
               </li>
               <li><a href="#!" className="text-gray-400 hover:text-crypto-purple transition-colors">Sitemap</a></li>
             </ul>

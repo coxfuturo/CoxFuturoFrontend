@@ -52,7 +52,7 @@ import TourTravelIndustry from "./Industries/More-Industries/Tour-Travels/Index"
 import SocialNetworkingIndustry from "./Industries/More-Industries/SocialNetworking/Index";
 import QuotationCalculator from "./calculator";
 import { RowsIcon } from "lucide-react";
-
+import CareerPage from "./career";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -110,6 +110,7 @@ const App = () => (
             <Route path="industries/social-networking" element={<  SocialNetworkingIndustry />} />
            {/* calculator */}
             <Route path="quotation/calculator" element={<  QuotationCalculator />} />
+            <Route path="career" element={<  CareerPage />} />
 
           </Route>
 
