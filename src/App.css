@@ -1,0 +1,29 @@
+/* Root fix – full width layout */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove demo styles */
+.logo,
+.logo:hover,
+.logo.react:hover,
+.read-the-docs {
+  all: unset;
+}
+
+/* Cards – reusable UI */
+.card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Smooth global transitions */
+* {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
