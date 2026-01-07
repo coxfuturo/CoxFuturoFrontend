@@ -30,6 +30,7 @@ import ARVRSolutions from "./services/SoftwareSolutions/AR-VR/Index";
 import DigitalMarketing from "./services/Marketing/DigitalMarketing/Index";
 import SeoOptimization from "./services/Marketing/SEOOptimization/Index";
 import ContentWriting from "./services/Marketing/ContentWriting/Index";
+import SocialMediaMarketing from "./services/Marketing/SocialMediaMarketing/Index";
 
 //industries
 import EScooterIndustry from "./Industries/Mobility-Transport/E-Scooter/Index";
@@ -88,7 +89,7 @@ const App = () => (
             <Route path="services/digital-marketing" element={<DigitalMarketing />} />
             <Route path="services/seo" element={<SeoOptimization />} />
             <Route path="services/content-writing" element={<ContentWriting />} />
-            <Route path="services/social-media" element={<ContentWriting />} />
+            <Route path="services/social-media" element={<SocialMediaMarketing />} />
 
             {/* Industries */}
             <Route path="industries/e-scooter" element={<EScooterIndustry />} />

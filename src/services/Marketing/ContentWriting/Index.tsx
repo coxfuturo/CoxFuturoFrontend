@@ -23,6 +23,15 @@ const ContentWriting = () => {
 
   return (
     <>
+
+    <div className="relative w-full min-h-screen">
+      <div className="fixed inset-0 -z-10 bg-cover bg-center"
+      style={{
+      backgroundImage: 'url("/image/Cw-bg.jpeg")'
+    }}>
+      </div>
+       <div className="fixed inset-0 -z-10 bg-black/70"></div>
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
@@ -84,9 +93,9 @@ const ContentWriting = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <div >
               <img
-                src="/images/marketing/content/hero.jpg"
+                src="/image/Cw-1.png"
                 alt="Content Writing"
                 className="w-full h-[440px] object-cover"
                 loading="lazy"
@@ -97,8 +106,17 @@ const ContentWriting = () => {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+
+          <div>
+            <img
+              src="/image/Cw-2.jpg"
+              alt="Why Content Writing"
+              className="rounded-2xl shadow-2xl  overflow-hidden w-[550px]"
+              loading="lazy"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
               Why Quality Content Matters
@@ -130,19 +148,11 @@ const ContentWriting = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/marketing/content/about.jpg"
-              alt="Why Content Writing"
-              className="rounded-2xl shadow-2xl w-full"
-              loading="lazy"
-            />
-          </div>
         </div>
       </section>
 
       {/* ================= SERVICES ================= */}
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             Content Writing Services We Offer
@@ -197,16 +207,8 @@ const ContentWriting = () => {
       </section>
 
       {/* ================= PROCESS ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <img
-              src="/images/marketing/content/process.jpg"
-              alt="Content Writing Process"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
-
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
               Our Content Writing Process
@@ -230,6 +232,14 @@ const ContentWriting = () => {
               </div>
             ))}
           </div>
+          <div>
+            <img
+              src="/image/Cw-3.webp"
+              alt="Content Writing Process"
+              className="rounded-2xl shadow-2xl w-full"
+            />
+          </div>
+
         </div>
       </section>
 
@@ -261,6 +271,9 @@ const ContentWriting = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

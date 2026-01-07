@@ -22,6 +22,14 @@ const SeoOptimization = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+      <div className="fixed inset-0 -z-10 bg-cover bg-center"
+      style={{
+      backgroundImage: 'url("/image/Seo-bg.avif")'
+    }}>
+      </div>
+       <div className="fixed inset-0 -z-10 bg-black/70"></div>
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
@@ -82,9 +90,9 @@ const SeoOptimization = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <div >
               <img
-                src="/images/marketing/seo/hero.jpg"
+                src="/image/Seo-1.png"
                 alt="SEO Optimization"
                 className="w-full h-[440px] object-cover"
                 loading="lazy"
@@ -95,8 +103,17 @@ const SeoOptimization = () => {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+
+          <div>
+            <img
+              src="/image/Seo-2.webp"
+              alt="Why SEO Matters"
+              className="rounded-2xl shadow-2xl w-full"
+              loading="lazy"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
               Why SEO Is Critical for Business Growth
@@ -128,19 +145,11 @@ const SeoOptimization = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/marketing/seo/about.jpg"
-              alt="Why SEO Matters"
-              className="rounded-2xl shadow-2xl w-full"
-              loading="lazy"
-            />
-          </div>
         </div>
       </section>
 
       {/* ================= SERVICES ================= */}
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             SEO Services We Provide
@@ -195,15 +204,8 @@ const SeoOptimization = () => {
       </section>
 
       {/* ================= PROCESS ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <img
-              src="/images/marketing/seo/process.jpg"
-              alt="SEO Process"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
 
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
@@ -227,6 +229,14 @@ const SeoOptimization = () => {
                 <p className="text-gray-400 text-sm">{step}</p>
               </div>
             ))}
+          </div>
+
+          <div>
+            <img
+              src="/image/Seo-3.jpg"
+              alt="SEO Process"
+              className="rounded-2xl shadow-2xl w-full"
+            />
           </div>
         </div>
       </section>
@@ -259,6 +269,9 @@ const SeoOptimization = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

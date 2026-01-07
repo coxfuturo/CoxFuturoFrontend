@@ -91,11 +91,11 @@ const ERPDevelopment = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <div >
               <img
-                src="/images/erp/hero.jpg"
+                src="/image/erp-1.png"
                 alt="ERP Development"
-                className="w-full h-[440px] object-cover"
+                // className="w-full h-[440px] object-cover"
                 loading="lazy"
               />
             </div>

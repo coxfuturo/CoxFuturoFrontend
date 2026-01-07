@@ -30,8 +30,9 @@ const CorporateWebsite = () => {
         style={{
         backgroundImage: 'url("/image/corporate-bg.jpg")'
       }}>
+        <div className="fixed inset-0 -z-10 bg-black/70" />
       </div>
-      <div className="fixed inset-0 -z-10 bg-black/70" />
+      
 
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen bg-transparent flex items-center overflow-hidden">

@@ -23,6 +23,14 @@ const ARVRSolutions = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+      <div className="fixed inset-0 -z-10 bg-cover bg-center"
+      style={{
+      backgroundImage: 'url("/image/Ar-bg.webp")'
+    }}>
+      <div className="fixed inset-0 -z-10 bg-black/70"></div>
+      </div>
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
@@ -84,11 +92,11 @@ const ARVRSolutions = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <div>
               <img
-                src="/images/ar-vr/hero.jpg"
+                src="/image/ar.png"
                 alt="AR VR Solutions"
-                className="w-full h-[440px] object-cover"
+                // className="w-full h-[440px] object-cover"
                 loading="lazy"
               />
             </div>
@@ -97,8 +105,17 @@ const ARVRSolutions = () => {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+
+          <div>
+            <img
+              src="/image/Arvr-2.jpg"
+              alt="AR VR Technology"
+              className="rounded-2xl shadow-2xl w-full"
+              loading="lazy"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
               Why AR & VR Matter for Modern Businesses
@@ -130,19 +147,11 @@ const ARVRSolutions = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/ar-vr/about.jpg"
-              alt="AR VR Technology"
-              className="rounded-2xl shadow-2xl w-full"
-              loading="lazy"
-            />
-          </div>
         </div>
       </section>
 
       {/* ================= SOLUTIONS ================= */}
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             AR / VR Solutions We Provide
@@ -197,15 +206,8 @@ const ARVRSolutions = () => {
       </section>
 
       {/* ================= PROCESS ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <img
-              src="/images/ar-vr/process.jpg"
-              alt="AR VR Development Process"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
 
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
@@ -229,6 +231,14 @@ const ARVRSolutions = () => {
                 <p className="text-gray-400 text-sm">{step}</p>
               </div>
             ))}
+          </div>
+
+          <div>
+            <img
+              src="/image/AR-VR-Development.jpg"
+              alt="AR VR Development Process"
+              className="rounded-2xl shadow-2xl w-full"
+            />
           </div>
         </div>
       </section>
@@ -261,6 +271,9 @@ const ARVRSolutions = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

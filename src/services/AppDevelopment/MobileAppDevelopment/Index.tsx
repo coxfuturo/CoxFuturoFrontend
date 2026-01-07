@@ -28,7 +28,7 @@ const MobileAppDevelopment = () => {
   return (
     <>
 
-    <div className="relative w-full min-h-screen">
+      <div className="relative w-full min-h-screen">
       <div className="fixed inset-0 -z-10 bg-cover bg-center"
       style={{
       backgroundImage: 'url("/image/App-bg.jpg")'
@@ -94,7 +94,7 @@ const MobileAppDevelopment = () => {
           {/* RIGHT */}
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.2 }}>
             <img
-              src="/image/Mobapp-1.png"
+              src="/image/mob-1.png"
               alt="Mobile App Development"
               // className="rounded-3xl shadow-2xl border border-white/10 w-full h-[460px] object-cover"
             />
@@ -209,7 +209,7 @@ const MobileAppDevelopment = () => {
 
 
     </div>
-      
+   
     </>
   );
 };

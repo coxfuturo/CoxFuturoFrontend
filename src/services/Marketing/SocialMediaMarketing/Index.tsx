@@ -23,6 +23,14 @@ const SocialMediaMarketing = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+      <div className="fixed inset-0 -z-10 bg-cover bg-center"
+      style={{
+      backgroundImage: 'url("/image/SM-bg.avif")'
+    }}>
+      </div>
+       <div className="fixed inset-0 -z-10 bg-black/70"></div>
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
@@ -84,9 +92,9 @@ const SocialMediaMarketing = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <div >
               <img
-                src="/images/marketing/social/hero.jpg"
+                src="/image/Sm-1.png"
                 alt="Social Media Marketing"
                 className="w-full h-[440px] object-cover"
                 loading="lazy"
@@ -97,8 +105,16 @@ const SocialMediaMarketing = () => {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+              src="/image/Sm-2.jpg"
+              alt="Why Social Media Marketing"
+              className="rounded-2xl shadow-2xl w-full"
+              loading="lazy"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
               Why Social Media Marketing Matters
@@ -130,19 +146,12 @@ const SocialMediaMarketing = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/marketing/social/about.jpg"
-              alt="Why Social Media Marketing"
-              className="rounded-2xl shadow-2xl w-full"
-              loading="lazy"
-            />
-          </div>
+          
         </div>
       </section>
 
       {/* ================= SERVICES ================= */}
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             Social Media Services We Offer
@@ -197,15 +206,8 @@ const SocialMediaMarketing = () => {
       </section>
 
       {/* ================= PROCESS ================= */}
-      <section className="py-24 bg-[#12141C]">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <img
-              src="/images/marketing/social/process.jpg"
-              alt="Social Media Process"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
 
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
@@ -229,6 +231,14 @@ const SocialMediaMarketing = () => {
                 <p className="text-gray-400 text-sm">{step}</p>
               </div>
             ))}
+          </div>
+
+          <div>
+            <img
+              src="/image/Sm-3.png"
+              alt="Social Media Process"
+              className="rounded-2xl shadow-2xl w-full"
+            />
           </div>
         </div>
       </section>
@@ -261,6 +271,9 @@ const SocialMediaMarketing = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

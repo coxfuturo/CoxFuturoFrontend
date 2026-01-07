@@ -25,7 +25,7 @@ const CustomCRMDevelopment = () => {
     <div className="relative w-full min-h-screen">
       <div className="fixed inset-0 -z-10 bg-cover bg-center"
       style={{
-      backgroundImage: 'url("/image/crm-bg.jpg")'
+      backgroundImage: 'url("/image/Crm-bg2.jpg")'
     }}>
       <div className="fixed inset-0 -z-10 bg-black/70"></div>
       </div>
@@ -89,11 +89,11 @@ const CustomCRMDevelopment = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <div >
               <img
-                src="/images/crm/hero.jpg"
+                src="/image/crm-1.png"
                 alt="Custom CRM Development"
-                className="w-full h-[440px] object-cover"
+                className="  object-cover"
                 loading="lazy"
               />
             </div>

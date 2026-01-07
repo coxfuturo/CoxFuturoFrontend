@@ -26,7 +26,7 @@ const SaaSDevelopment = () => {
     <div className="relative w-full min-h-screen">
       <div className="fixed inset-0 -z-10 bg-cover bg-center bg-[#1E293B]"
       style={{
-        backgroundImage: 'url("/image/saas-bg.avif")',
+        backgroundImage: 'url("/image/saas-bg.jpg")',
       }}
       >
         <div className="fixed inset-0 -z-10 bg-black/90"></div>
