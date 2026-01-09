@@ -22,6 +22,8 @@ const FinanceIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#061A16] via-[#0B2E26] to-[#103F34]"
@@ -86,9 +88,9 @@ const FinanceIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/finance/hero.jpg"
+              src="/image/Smart.png"
               alt="Finance Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -97,6 +99,13 @@ const FinanceIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#071C17]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/D-T.png"
+            alt="Finance Technology"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-emerald-300">
               Digital Transformation in Finance
@@ -127,11 +136,7 @@ const FinanceIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/finance/about.jpg"
-            alt="Finance Technology"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -195,7 +200,10 @@ const FinanceIndustry = () => {
           />
         )}
       </AnimatePresence>
-    </>
+
+
+    </div>
+          </>
   );
 };
 

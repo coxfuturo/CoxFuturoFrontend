@@ -21,6 +21,9 @@ const AgricultureIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+
+    
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#16a34a] via-[#22c55e] to-[#a7f3d0]"
@@ -85,9 +88,9 @@ const AgricultureIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/agriculture/hero.jpg"
+              src="/image/Agriculture.png"
               alt="Agriculture Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              className="rounded-3xl shadow-2xl "
             />
           </motion.div>
         </div>
@@ -96,6 +99,13 @@ const AgricultureIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#dcfce7]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/Agriculture-2.png"
+            alt="Agriculture Solutions"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-green-900">
               Smart Agriculture for Modern Farming
@@ -126,11 +136,7 @@ const AgricultureIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/agriculture/about.jpg"
-            alt="Agriculture Solutions"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -192,6 +198,7 @@ const AgricultureIndustry = () => {
           />
         )}
       </AnimatePresence>
+      </div>
     </>
   );
 };

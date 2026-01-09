@@ -22,6 +22,8 @@ const BankingIndustry = () => {
 
   return (
     <>
+    <div>
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#001F3F] via-[#003366] to-[#004C99]"
@@ -86,9 +88,9 @@ const BankingIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/banking/hero.jpg"
+              src="/image/Modern banking.png"
               alt="Banking Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -97,6 +99,11 @@ const BankingIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#001B33]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <img
+            src="/image/Digitalbanking.png"
+            alt="Banking Technology"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-400">
               Digital Banking Solutions
@@ -126,11 +133,7 @@ const BankingIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/banking/about.jpg"
-            alt="Banking Technology"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -192,6 +195,10 @@ const BankingIndustry = () => {
           />
         )}
       </AnimatePresence>
+      
+
+    </div>
+      
     </>
   );
 };

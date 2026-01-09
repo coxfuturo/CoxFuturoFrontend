@@ -21,6 +21,8 @@ const InsuranceIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#332200] via-[#664400] to-[#996600]"
@@ -85,9 +87,9 @@ const InsuranceIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/insurance/hero.jpg"
+              src="/image/Insurance.png"
               alt="Insurance Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -96,6 +98,13 @@ const InsuranceIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#331F00]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/Insurance-2.png"
+            alt="Insurance Technology"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-yellow-400">
               Modern Insurance Software
@@ -125,11 +134,7 @@ const InsuranceIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/insurance/about.jpg"
-            alt="Insurance Technology"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -190,6 +195,9 @@ const InsuranceIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

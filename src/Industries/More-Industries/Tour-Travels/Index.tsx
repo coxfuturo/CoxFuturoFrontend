@@ -21,6 +21,9 @@ const TourTravelIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+
+    
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#3b82f6] via-[#60a5fa] to-[#bfdbfe]"
@@ -85,17 +88,24 @@ const TourTravelIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/tour-travel/hero.jpg"
+              src="/image/tour.png"
               alt="Tour & Travel Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#e0f2fe]">
+      <section className="py-24 bg-[#6f96b1]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/tour-2.png"
+            alt="Tour & Travel Solutions"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-900">
               Travel Software for Seamless Journeys
@@ -126,11 +136,7 @@ const TourTravelIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/tour-travel/about.jpg"
-            alt="Tour & Travel Solutions"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -191,6 +197,7 @@ const TourTravelIndustry = () => {
           />
         )}
       </AnimatePresence>
+      </div>
     </>
   );
 };

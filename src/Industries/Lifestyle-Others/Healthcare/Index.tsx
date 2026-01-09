@@ -22,9 +22,10 @@ const HealthcareIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
-        bg-gradient-to-br from-[#0f4c75] via-[#3282b8] to-[#78e0dc]"
+        bg-gradient-to-br from-[#0f4c75] via-[#1d3647] to-[#356866]"
       >
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-24 left-20 w-96 h-96 bg-teal-400/20 blur-3xl rounded-full animate-pulse" />
@@ -86,9 +87,9 @@ const HealthcareIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/healthcare/hero.jpg"
+              src="/image/Healthcare-1.png"
               alt="Healthcare Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -97,6 +98,13 @@ const HealthcareIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#0f4c75]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/Healthcare-2.png"
+            alt="Healthcare Software"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-teal-300">
               Digital Healthcare Solutions
@@ -127,11 +135,7 @@ const HealthcareIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/healthcare/about.jpg"
-            alt="Healthcare Software"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -192,6 +196,9 @@ const HealthcareIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

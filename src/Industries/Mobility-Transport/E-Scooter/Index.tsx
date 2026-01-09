@@ -23,6 +23,8 @@ const EScooterIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#0F2027] via-[#203A43] to-[#2C5364]">
@@ -87,11 +89,15 @@ const EScooterIndustry = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <img
-              src="/images/industries/escooter/hero.jpg"
+            <div >
+              <img
+              src="/image/E-s.png"
               alt="E Scooter Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="shadow-2xl"
             />
+
+            </div>
+            
           </motion.div>
         </div>
       </section>
@@ -99,6 +105,13 @@ const EScooterIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#0B1C22]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+              src="/image/e-scooter.png"
+              alt="E Scooter Technology"
+              className="rounded-2xl shadow-2xl w-full"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-cyan-300">
               Why Technology Matters in E-Scooter Industry
@@ -129,13 +142,6 @@ const EScooterIndustry = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/industries/escooter/about.jpg"
-              alt="E Scooter Technology"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
         </div>
       </section>
 
@@ -199,6 +205,10 @@ const EScooterIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+
+    </div>
+      
     </>
   );
 };

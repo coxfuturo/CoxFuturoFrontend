@@ -23,6 +23,7 @@ const AviationIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
       {/* ================= HERO ================= */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden
@@ -89,9 +90,9 @@ const AviationIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/aviation/hero.jpg"
+              src="/image/M-A.png"
               alt="Aviation Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -100,6 +101,14 @@ const AviationIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#080B1F]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+
+          <div>
+            <img
+              src="/image/D-I.png"
+              alt="Aviation Technology"
+              // className="rounded-2xl shadow-2xl w-full"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-indigo-300">
               Digital Innovation in Aviation
@@ -130,13 +139,6 @@ const AviationIndustry = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/industries/aviation/about.jpg"
-              alt="Aviation Technology"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
         </div>
       </section>
 
@@ -200,6 +202,9 @@ const AviationIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

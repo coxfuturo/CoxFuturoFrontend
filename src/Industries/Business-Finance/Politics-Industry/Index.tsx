@@ -21,6 +21,8 @@ const PoliticsIndustry = () => {
 
   return (
     <>
+    <div>
+
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#330033] via-[#660066] to-[#990099]"
@@ -85,9 +87,9 @@ const PoliticsIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/politics/hero.jpg"
+              src="/image/Political-1.png"
               alt="Politics Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -96,6 +98,13 @@ const PoliticsIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#330033]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/political.png"
+            alt="Political Software"
+            className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
               Political Campaign & Governance Software
@@ -126,11 +135,7 @@ const PoliticsIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/politics/about.jpg"
-            alt="Political Software"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -191,6 +196,9 @@ const PoliticsIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

@@ -21,6 +21,9 @@ const GamesIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+
+    
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#6366f1] via-[#818cf8] to-[#a5b4fc]"
@@ -85,9 +88,9 @@ const GamesIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/games/hero.jpg"
+              src="/image/Games.png"
               alt="Games Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -96,6 +99,13 @@ const GamesIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#1e1b4b]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/Games-2.png"
+            alt="Games Development"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-indigo-400">
               Cutting-Edge Gaming Solutions
@@ -126,11 +136,7 @@ const GamesIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/games/about.jpg"
-            alt="Games Development"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -192,6 +198,7 @@ const GamesIndustry = () => {
           />
         )}
       </AnimatePresence>
+      </div>
     </>
   );
 };

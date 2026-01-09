@@ -89,11 +89,15 @@ const LogisticsIndustry = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <img
-              src="/images/industries/logistics/hero.jpg"
+            <div>
+              <img
+              src="/image/S-L.png"
               alt="Logistics Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              style={{ width: "350px" }}
             />
+
+            </div>
+            
           </motion.div>
         </div>
       </section>
@@ -101,6 +105,13 @@ const LogisticsIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#050F1D]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+              src="/image/D-L.png"
+              alt="Logistics Technology"
+              className="rounded-2xl shadow-2xl w-full"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-sky-300">
               Why Digital Transformation Matters in Logistics
@@ -131,13 +142,6 @@ const LogisticsIndustry = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/industries/logistics/about.jpg"
-              alt="Logistics Technology"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
         </div>
       </section>
 

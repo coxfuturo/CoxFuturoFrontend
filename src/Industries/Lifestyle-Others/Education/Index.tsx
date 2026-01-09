@@ -22,9 +22,10 @@ const EducationIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
-        bg-gradient-to-br from-[#3b82f6] via-[#60a5fa] to-[#93c5fd]"
+        bg-gradient-to-br from-[#0b2857] via-[#193d69] to-[#28415e]"
       >
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-24 left-20 w-96 h-96 bg-blue-400/20 blur-3xl rounded-full animate-pulse" />
@@ -86,17 +87,24 @@ const EducationIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/education/hero.jpg"
+              src="/image/Education-1.png"
               alt="Education Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#2563eb]/10">
+      <section className="py-24 bg-[#071731]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/Education-2.png"
+            alt="Education Software"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-teal-400">
               Modern Software Solutions for Education
@@ -127,11 +135,7 @@ const EducationIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/education/about.jpg"
-            alt="Education Software"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -193,6 +197,10 @@ const EducationIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
+        
     </>
   );
 };

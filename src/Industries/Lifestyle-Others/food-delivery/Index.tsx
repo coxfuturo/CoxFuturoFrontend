@@ -22,6 +22,7 @@ const FoodDeliveryIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#ff6f3c] via-[#ff914d] to-[#ffd6a5]"
@@ -86,9 +87,9 @@ const FoodDeliveryIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/food/hero.jpg"
+              src="/image/Food-1.png"
               alt="Food Delivery Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -97,6 +98,13 @@ const FoodDeliveryIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#ff914d]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/Food-2.png"
+            alt="Food Delivery Software"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Digital Solutions for Food Delivery
@@ -127,11 +135,7 @@ const FoodDeliveryIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/food/about.jpg"
-            alt="Food Delivery Software"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -193,6 +197,9 @@ const FoodDeliveryIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

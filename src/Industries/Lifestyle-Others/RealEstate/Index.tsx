@@ -21,6 +21,8 @@ const RealEstateIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+      
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#f97316] via-[#fb923c] to-[#fdba74]"
@@ -85,9 +87,9 @@ const RealEstateIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/realestate/hero.jpg"
+              src="/image/Real-Estate.png"
               alt="Real Estate Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -96,6 +98,13 @@ const RealEstateIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#f97316]/10">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/Real-Estate-2.png"
+            alt="Real Estate Software"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-yellow-400">
               Smart Software for Real Estate Management
@@ -126,11 +135,7 @@ const RealEstateIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/realestate/about.jpg"
-            alt="Real Estate Software"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -192,6 +197,9 @@ const RealEstateIndustry = () => {
           />
         )}
       </AnimatePresence>
+      </div>
+      
+    
     </>
   );
 };

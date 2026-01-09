@@ -24,6 +24,8 @@ const EVIndustry = () => {
 
   return (
     <>
+    <div>
+
       {/* ================= HERO ================= */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden
@@ -91,9 +93,9 @@ const EVIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/ev/hero.jpg"
+              src="/image/E-m.png"
               alt="Electric Vehicle Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -102,6 +104,13 @@ const EVIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#061E17]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+              src="/image/ev-2.png"
+              alt="EV Technology"
+              // className="rounded-2xl shadow-2xl w-full"
+            />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-emerald-300">
               Why Technology Is Critical for EV Industry
@@ -132,13 +141,6 @@ const EVIndustry = () => {
             </div>
           </div>
 
-          <div>
-            <img
-              src="/images/industries/ev/about.jpg"
-              alt="EV Technology"
-              className="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
         </div>
       </section>
 
@@ -202,6 +204,9 @@ const EVIndustry = () => {
           />
         )}
       </AnimatePresence>
+
+    </div>
+      
     </>
   );
 };

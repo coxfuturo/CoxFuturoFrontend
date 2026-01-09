@@ -22,6 +22,9 @@ const SocialNetworkingIndustry = () => {
 
   return (
     <>
+    <div className="relative w-full min-h-screen">
+
+   
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
         bg-gradient-to-br from-[#7c3aed] via-[#8b5cf6] to-[#c4b5fd]"
@@ -86,9 +89,9 @@ const SocialNetworkingIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/images/industries/social-networking/hero.jpg"
+              src="/image/s-n.png"
               alt="Social Networking Industry"
-              className="rounded-3xl shadow-2xl border border-white/10"
+              // className="rounded-3xl shadow-2xl border border-white/10"
             />
           </motion.div>
         </div>
@@ -97,6 +100,13 @@ const SocialNetworkingIndustry = () => {
       {/* ================= ABOUT ================= */}
       <section className="py-24 bg-[#f3e8ff]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+            src="/image/s-n-2.png"
+            alt="Social Networking Solutions"
+            // className="rounded-2xl shadow-2xl w-full"
+          />
+          </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-purple-900">
               Building Communities Through Technology
@@ -127,11 +137,7 @@ const SocialNetworkingIndustry = () => {
             </div>
           </div>
 
-          <img
-            src="/images/industries/social-networking/about.jpg"
-            alt="Social Networking Solutions"
-            className="rounded-2xl shadow-2xl w-full"
-          />
+          
         </div>
       </section>
 
@@ -192,6 +198,7 @@ const SocialNetworkingIndustry = () => {
           />
         )}
       </AnimatePresence>
+       </div>
     </>
   );
 };
