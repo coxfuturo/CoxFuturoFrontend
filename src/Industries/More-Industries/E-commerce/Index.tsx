@@ -26,7 +26,7 @@ const ECommerceIndustry = () => {
     
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
-        bg-gradient-to-br from-[#10b981] via-[#34d399] to-[#6ee7b7]"
+        bg-gradient-to-br from-[#02402b] via-[#197151] to-[#1a4433]"
       >
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-24 left-16 w-96 h-96 bg-green-400/20 blur-3xl rounded-full animate-pulse" />
@@ -88,7 +88,7 @@ const ECommerceIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/image/E-1.png"
+              src="/image/E-COM.png"
               alt="E-Commerce Industry"
               // className="rounded-3xl shadow-2xl border border-white/10"
             />
@@ -97,7 +97,7 @@ const ECommerceIndustry = () => {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#065f46]">
+      <section className="py-24 bg-[#2c6454]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
           <div>
             <img

@@ -27,7 +27,7 @@ const AviationIndustry = () => {
       {/* ================= HERO ================= */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden
-        bg-gradient-to-br from-[#0A0F2C] via-[#121A45] to-[#1B2A6D]"
+        bg-gradient-to-br from-[#0A0F2C] via-[#636fb4] to-[#1B2A6D]"
       >
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-20 left-24 w-96 h-96 bg-indigo-500/20 blur-3xl rounded-full animate-pulse" />
@@ -90,7 +90,7 @@ const AviationIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/image/M-A.png"
+              src="/image/MA.png"
               alt="Aviation Industry"
               // className="rounded-3xl shadow-2xl border border-white/10"
             />
@@ -99,12 +99,12 @@ const AviationIndustry = () => {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#080B1F]">
+      <section className="py-24 bg-[#111849]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
 
           <div>
             <img
-              src="/image/D-I.png"
+              src="/image/DI.png"
               alt="Aviation Technology"
               // className="rounded-2xl shadow-2xl w-full"
             />
@@ -175,7 +175,7 @@ const AviationIndustry = () => {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-24 bg-gradient-to-r from-indigo-600 to-purple-600 text-center">
+      <section className="py-24 bg-gradient-to-r from-indigo-600 to-purple-900 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
           Ready to Elevate Your Aviation Systems?
         </h2>

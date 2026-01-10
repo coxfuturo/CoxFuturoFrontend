@@ -26,7 +26,7 @@ const AgricultureIndustry = () => {
     
       {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center overflow-hidden
-        bg-gradient-to-br from-[#16a34a] via-[#22c55e] to-[#a7f3d0]"
+        bg-gradient-to-br from-[#0b4a2e] via-[#22c55e] to-[#a7f3d0]"
       >
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-24 left-16 w-96 h-96 bg-green-400/20 blur-3xl rounded-full animate-pulse" />
