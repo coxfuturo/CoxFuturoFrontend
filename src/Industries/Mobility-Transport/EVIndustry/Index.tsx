@@ -29,7 +29,7 @@ const EVIndustry = () => {
       {/* ================= HERO ================= */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden
-        bg-gradient-to-br from-[#041B15] via-[#063B2C] to-[#0A5C44]"
+        bg-gradient-to-br from-[#041B15] via-[#135482] to-[#121631]"
       >
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-emerald-400/20 blur-3xl rounded-full animate-pulse" />
@@ -93,7 +93,7 @@ const EVIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/image/E-m.png"
+              src="/image/ev-1.png"
               alt="Electric Vehicle Industry"
               // className="rounded-3xl shadow-2xl border border-white/10"
             />
@@ -102,7 +102,7 @@ const EVIndustry = () => {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 bg-[#061E17]">
+      <section className="py-24 bg-[#050e1f]">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
           <div>
             <img
@@ -177,7 +177,7 @@ const EVIndustry = () => {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-24 bg-gradient-to-r from-emerald-600 to-green-600 text-center">
+      <section className="py-24 bg-gradient-to-r from-emerald-900 to-blue-900 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
           Ready to Build Your EV Software Platform?
         </h2>

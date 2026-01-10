@@ -86,12 +86,19 @@ const TourTravelIndustry = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
+            className="flex justify-center lg:justify-end"
+            
+            
           >
-            <img
+            <div >
+              <img
               src="/image/tour.png"
               alt="Tour & Travel Industry"
-              // className="rounded-3xl shadow-2xl border border-white/10"
+              className="w-[600px] h-[400px] flex- justify-center  "
             />
+              
+            </div>
+            
           </motion.div>
         </div>
       </section>

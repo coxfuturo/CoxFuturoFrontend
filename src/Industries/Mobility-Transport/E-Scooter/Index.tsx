@@ -91,7 +91,7 @@ const EScooterIndustry = () => {
           >
             <div >
               <img
-              src="/image/E-s.png"
+              src="/image/E-scooty.png"
               alt="E Scooter Industry"
               // className="shadow-2xl"
             />

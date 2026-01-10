@@ -88,7 +88,7 @@ const BankingIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/image/Modern banking.png"
+              src="/image/Digital-trans.png"
               alt="Banking Industry"
               // className="rounded-3xl shadow-2xl border border-white/10"
             />

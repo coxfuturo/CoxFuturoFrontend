@@ -107,7 +107,7 @@ const LogisticsIndustry = () => {
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
           <div>
             <img
-              src="/image/D-L.png"
+              src="/image/log.png"
               alt="Logistics Technology"
               className="rounded-2xl shadow-2xl w-full"
             />

@@ -31,7 +31,7 @@ const MobileAppDevelopment = () => {
       <div className="relative w-full min-h-screen">
       <div className="fixed inset-0 -z-10 bg-cover bg-center"
       style={{
-      backgroundImage: 'url("/image/App-bg.jpg")'
+      backgroundImage: 'url("/image/M-bg.jpeg")'
     }}>
       <div className="fixed inset-0 -z-10 bg-black/70"></div>
       </div>
@@ -106,7 +106,7 @@ const MobileAppDevelopment = () => {
       <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
           <div className="h-[400px] overflow-hidden rounded-2xl">
-            <img src="/image/Mobapp-2.png" className="rounded-2xl shadow-2xl w-full" />
+            <img src="/image/m-app.jpeg" className="rounded-2xl shadow-2xl w-full" />
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">

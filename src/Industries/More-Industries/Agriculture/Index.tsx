@@ -88,9 +88,9 @@ const AgricultureIndustry = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img
-              src="/image/Agriculture.png"
+              src="/image/A-2.png"
               alt="Agriculture Industry"
-              className="rounded-3xl shadow-2xl "
+              // className="rounded-3xl shadow-2xl "
             />
           </motion.div>
         </div>
@@ -101,7 +101,7 @@ const AgricultureIndustry = () => {
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
           <div>
             <img
-            src="/image/Agriculture-2.png"
+            src="/image/Agriculture.png"
             alt="Agriculture Solutions"
             // className="rounded-2xl shadow-2xl w-full"
           />
